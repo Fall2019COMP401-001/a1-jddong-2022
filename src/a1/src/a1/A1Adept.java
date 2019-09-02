@@ -15,8 +15,6 @@ public class A1Adept {
 		
 		String[] Items = new String[invCount];
 		double[] Prices = new double[invCount];
-		double[] Data = new double[invCount];
-		String[] Names = new String[invCount];
 				
 		for (int i = 0; i < invCount; i++) {
 			Items[i] = scan.next();
@@ -26,6 +24,9 @@ public class A1Adept {
 		// Loop through all customers
 		
 		int ctCus = scan.nextInt();
+		
+		double[] Data = new double[ctCus];
+		String[] Names = new String[ctCus];
 		
 		for (int i = 0; i < ctCus; i++) {
 			String fullName = scan.next() + " " + scan.next();
